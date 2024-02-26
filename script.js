@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const outputInput = documet. getElementById("output")
-
+let arr = [1,2,3,4];
 function newMan(arr){
 	return new Promise((res, rej) => {
 		setTimeout(()=> {
@@ -12,9 +12,9 @@ function newMan(arr){
 		 return new Promise((res, rej) => {
 			 setTimepout(() => {
 				 const evenMult = evenNum.map((num) => num * 2);
-				 outputInput.innerText = evenMult.join('');
+				 outputInput.innerText = evenMult.join(',');
 				 res(evenMult)
-			 }, 1000)
+			 }, 2000)
 		 })
 	 })
 
